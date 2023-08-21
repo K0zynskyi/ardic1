@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <title>Ardic Ukraine</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__row">
+                <div class="header__logo-container header__item">
+                    <a href="index.html"><img src="img/Ardic-logo-white.webp" class="header__logo"></a>
+                </div>
+                <ul class="header__navigation header__item">
+                    <li class="header__list-item"><a href="index.html#about-us">Про нас</a></li>
+                    <li class="header__list-item"><a href="index.html#goods">Продукція</a></li>
+                    <li class="header__list-item"><a href="">Партнери</a></li>
+                    <li class="header__list-item"><a href="certification.html">Сертифікація</a></li>
+                </ul>
+                <div class="header__buttons header__item">
+                    <button class="header__change-language">EN</button>
+<!-- СМЕНА ТЕМЫ --> <button class="header__change-theme" onclick="changeTheme()"><img src="img/Moon.svg" alt="Змінити тему сайту" id="theme-image"></button>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+            <section class="certification">
+                <div class="certification__column">
+                    <div class="cerification__row">
+                        <div class="certification__slider">
+                            <div class="fade certification__slide">
+                                <div class="certification__slide-number">1 / 3</div>
+                                <img class="certification__slide-image" src="img/Certificate-1.jpg">
+                            </div>
+                        
+                            <div class="fade certification__slide">
+                                <div class="certification__slide-number">2 / 3</div>
+                                <img class="certification__slide-image" src="img/Certificate-2.jpg">
+                            </div>
+                        
+                            <div class="fade certification__slide">
+                                <div class="certification__slide-number">3 / 3</div>
+                                <img class="certification__slide-image" src="img/Certificate-3.jpg">
+                            </div>
+                        
+                            <a class="certification__prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="certification__next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                    <div class="cerification__row">
+                        <div class="certification__dot-container">
+                            <span class="certification__dot" onclick="currentSlide(1)"></span>
+                            <span class="certification__dot" onclick="currentSlide(2)"></span>
+                            <span class="certification__dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__row">
+                <div class="footer__column">
+                    <div class="footer__contacts">
+                        <div class="contacts__title title-text">Контакти</div>
+                        <div class="contacts__subtitle">
+                            <a href="tel:+380676243384" class="subtitle-text">Телефон: +38 (067) 624-33-84</a>
+                            <a href="mailto:info@ardic.com.ua" class="subtitle-text">E-mail: info@ardic.com.ua</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column footer__logo-container">
+                    <hr class="footer__hr">
+                    <div><a href="index.html"><img src="img/Ardic-logo-white.webp" class="footer__logo"></a></div> 
+                    <hr class="footer__hr">
+                </div>
+                <div class="footer__column">
+                    <div class="footer__address">
+                        <div class="address__title title-text">Адреса</div>
+                        <div class="address__subtitle">
+                            <a href="https://goo.gl/maps/5XSLUKAFSVKh4ry5A" target="_blank" class="subtitle-text">Станція метро "Політехнічний інститут"<br>вул. Богдана Гаврилишина 7</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="js/index.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
